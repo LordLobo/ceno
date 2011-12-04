@@ -28,7 +28,7 @@ $config['default'] = array
 		'database' => 'ceno'
 	),
 	'character_set' => 'utf8',
-	'table_prefix'  => '',
+	'table_prefix'  => 'ush_',
 	'object'        => TRUE,
 	'cache'         => FALSE,
 	'escape'        => TRUE
