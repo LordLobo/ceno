@@ -1,3 +1,7 @@
 .idea/workspace.xml
 ushahidi/application/cache/*
+<<<<<<< HEAD
 ushahidi/application/logs/*
+=======
+ushahidi/application/logs/*
+>>>>>>> 9edb60dd62622298c4673502dfb040123a7d396e
