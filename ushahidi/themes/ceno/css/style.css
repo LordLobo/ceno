@@ -78,7 +78,7 @@ body{
 }
 
 body#page{
-    background: #585858 url(../images/page-bg.jpg) 50% 0 repeat-x;
+    background: #265BA9;
 }
 
 /* wrapper setup */
@@ -242,13 +242,6 @@ div#searchbox{
     width:380px;
     padding:0 0 10px 0;
     
-}
-
-div#loggedin_user_action{
-    float:right;
-    width:100%;
-    text-align:right;
-    padding:5px 15px 0px 0px;
 }
 
 /* languages */
@@ -625,15 +618,6 @@ div.footermenu ul li a.item1{
 
 div.footermenu ul li a:hover{
     text-decoration: none;
-}
-
-/* footer credits */
-div.footer-credits{
-    float: right;
-    font-size: 70%;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0 20px 0 0;
 }
 
 /* Reports */
@@ -1572,10 +1556,6 @@ ul.pager li a.active {background:#f2f7fa;}
     height : 22px;
     border : 1px solid #000;
     background : #ccc;
-}
-
-.feedback_title {
-    padding : 20px 0 0 10px;
 }
 
 .or_txt {
