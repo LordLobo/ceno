@@ -31,7 +31,7 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body { margin: 0; font-size: 16px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
@@ -49,8 +49,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
+a { color: #f5f5f5; }
+a:visited { color: #f5f5f5; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
@@ -203,6 +203,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 body {
   background: #00008b;
   color: white;
+  font-family: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
 #container {
@@ -215,32 +216,186 @@ img {
 }
 
 .logo {
-  max-width: 300px;
-  margin: 0 10px;
+  max-width: 18em;
+  margin: 1em;
   float: left;
+}
+
+header {
+  background: white;
+  border: white solid thin;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 header section {
   float: left;
-  width: 640px;
+  width: 38em;
+  margin: 1em;
   max-width: 100%;
 }
 
 #location {
   width: 100%;
+  margin-top: -1em;
 }
 
 nav ul, nav ul li {
-  display: inline;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 }
 
-nav ul li a {
+label {
+  position:absolute;
+  top:3px;
+  left:5px;
+  z-index:1;
+  color:#999;
+  text-indent: -99999px;
+}
+
+li a {
   display: block;
+  text-transform: uppercase;
+  text-align: center;
 }
 
+nav ul li {
+  background: #8b0000;
+  border: #8b0000 thin solid;
+  margin: 1em;
+  padding: 2em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  opacity: .85;
+}
+
+nav ul li:first-child {
+  background: #008800;
+  border-color: #008800;
+}
+
+nav ul li:hover {
+  opacity: 1;
+}
+
+nav ul li a:active {
+  position: relative;
+  top: 1px
+}
+
+#map {
+  margin: 1em;
+  background: #90ee90;
+  clear: both;
+  min-height: 500px;
+}
+
+nav a {
+  text-decoration: none;
+
+}
+
+
+
+
+/* subheader */
+.navigation {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 870px
+}
+
+#nav_bar a:link, #nav_bar a:visited, #nav_bar a:hover, #nav_bar a:active {
+  text-decoration: none;
+  font-size: 1.27272727em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block;
+  padding: 10px 0
+}
+
+.nav {
+  display: inline-block;
+  zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+  display: inline;
+  vertical-align: baseline;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .85em;
+  font-family: myriad-pro-1, myriad-pro-2, "Lucida Grande", sans-serif;
+  padding: 0 0 10px;
+  text-shadow: .0625em .0625em .0625em rgba(0, 0, 0, .75);
+  height: 25px;
+  opacity: .85
+}
+
+.nav:hover {
+  opacity: 1
+}
+
+.nav:active {
+  opacity: 1
+}
+
+.nav a:active {
+  position: relative;
+  top: 1px
+}
+
+.red_nav a {
+  color: #fff;
+}
+
+.red_nav {
+  color: #fff;
+  border-top: solid thin #C20000;
+  border-bottom: solid thin #C20000;
+  background: #B00;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BB0000), to(#680000));
+  background: -moz-linear-gradient(top, #BB0000, #680000);
+  width: 120px
+}
+
+.shop_nav {
+  width: 100px
+}
+
+.gold_nav {
+  color: #B00;
+  border-top: solid thin #f1b386;
+  border-bottom: solid thin #f1b386;
+  background: #F6C9A8;
+  width: 170px;
+  opacity: .9
+}
+
+ul#nav_bar li {
+  float: left
+}
+
+ul#nav_bar li:first-child {
+  -webkit-border-top-left-radius: .75em;
+  -moz-border-radius-topleft: .75em;
+  border-top-left-radius: .75em
+}
+
+ul#nav_bar li:last-child {
+  -webkit-border-top-right-radius: .75em;
+  -moz-border-radius-topright: .75em;
+  border-top-right-radius: .75em;
+  width: 170px
+}
+
+.on {
+  opacity: 1
+}
 
 /* =============================================================================
    Non-semantic helper classes
