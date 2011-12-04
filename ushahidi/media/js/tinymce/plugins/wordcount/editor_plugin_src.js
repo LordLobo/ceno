@@ -2,7 +2,7 @@
  * $Id: editor_plugin_src.js 201 2007-02-12 15:56:56Z spocke $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2008, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright ï¿½ 2004-2008, Moxiecode Systems AB, All rights reserved.
  */
 
 (function() {
@@ -16,7 +16,7 @@
 			var t = this, last = 0;
 
 			t.countre = ed.getParam('wordcount_countregex', /\S\s+/g);
-			t.cleanre = ed.getParam('wordcount_cleanregex', /[0-9.(),;:!?%#$¿'"_+=\\/-]*/g);
+			t.cleanre = ed.getParam('wordcount_cleanregex', /[0-9.(),;:!?%#$ï¿½'"_+=\\/-]*/g);
 			t.id = ed.id + '-word-count';
 
 			ed.onPostRender.add(function(ed, cm) {
