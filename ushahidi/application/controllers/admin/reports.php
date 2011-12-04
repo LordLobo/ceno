@@ -300,6 +300,7 @@ class Reports_Controller extends Admin_Controller
 		else
 		{
 			$locations = array();
+      $country_ids = array();
 		}
 		$this->template->content->locations = $locations;
 		$this->template->content->country_ids = $country_ids;
